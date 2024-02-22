@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html style="background:rgb(170, 234, 235); text-align: center;>
+
+
+
+<body>
+<form>
+    <label for="pswd">Enter password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="login" onclick="checkPswd();" />
+</form>
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "123";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="chatlog..html";
+        }
+        else{
+            alert("Passwords incorect.");
+        }
+    }
+</script>
+
+
+</body>
+</html>
